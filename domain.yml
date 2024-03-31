@@ -1,0 +1,538 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - menstrual_safety
+  - affordability
+  - scented_products
+  - cleaning_instructions
+  - swimming_exercise
+  - disposal_embarrassment
+  - itching_irritation
+  - late_period
+  - irregular_periods
+  - heavy_painful_periods
+  - missed_periods
+  - spotting_between_periods
+  - sudden_period_stop
+  - irregular_periods_fertility_concern
+  - track_cycle_method
+  - track_cycle_info
+  - track_cycle_importance
+  - track_cycle_apps_tools
+  - track_cycle_changes_irregularities
+  - menstrual_disorders_common
+  - menstrual_disorders_symptoms
+  - menstrual_disorders_diagnosis
+  - menstrual_disorders_treatment
+  - menstrual_disorders_fertility
+  - menstrual_myths_avoid_foods
+  - menstrual_myths_pregnancy_period
+  - menstrual_myths_exercise
+  - menstrual_myths_tampons_hymen
+  - menstrual_myths_menstrual_blood
+  - menstrual_products_types
+  - menstrual_products_choose
+  - menstrual_cups_safety
+  - menstrual_products_virgin
+  - menstrual_products_clean_maintain
+  - menstrual_pain_management_methods
+  - menstrual_pain_management_natural_remedies
+  - menstrual_pain_management_see_doctor
+  - menstrual_pain_management_exercise
+  - menstrual_pain_management_lifestyle_changes
+  - hormonal_changes_mental_health
+  - mental_health_symptoms_cycle
+  - manage_mental_health_symptoms
+  - supplements_medications_mood
+  - seek_professional_help_mental_health
+  - exercise_during_period
+  - types_of_exercises_period
+  - adjust_exercise_based_on_cycle
+  - exercise_affect_menstrual_cycle
+  - discomfort_leakage_during_exercise
+  - alleviate_menstrual_symptoms_foods
+  - dietary_changes_based_on_cycle
+  - avoid_foods_during_period
+  - nutrition_affect_menstrual_cycle
+  - food_cravings_during_cycle
+  - what_is_pcod
+  - pcod_symptoms
+  - diagnose_pcod
+  - treatment_options_pcod
+  - cure_pcod
+  - what_is_pms
+  - commonality_of_pms
+  - causes_of_pms
+  - treatment_of_pms
+  - seek_help_for_pms
+  - what_is_menopause
+  - symptoms_of_menopause
+  - age_of_menopause
+  - diagnose_menopause
+  - treatment_of_menopause
+  - causes_of_menstrual_pain
+  - relieve_menstrual_pain
+  - natural_remedies_for_menstrual_pain
+  - see_doctor_for_menstrual_pain
+  - lifestyle_changes_for_menstrual_pain
+  - reproductive_health_vaccines
+  - hpv_vaccine_recommendation
+  - safety_of_vaccines_during_pregnancy
+  - vaccine_protection_for_reproductive_health
+  - side_effects_of_reproductive_health_vaccines
+  - contraceptive_methods_available
+  - how_hormonal_contraceptives_work
+  - benefits_of_LARCs
+  - contraceptives_and_STI_protection
+  - choosing_right_contraceptive_method
+  - what_are_STDs
+  - preventing_STDs
+  - symptoms_of_STDs
+  - diagnosing_STDs
+  - what_to_do_if_suspect_STD
+  - what_is_UTI
+  - symptoms_of_UTI
+  - diagnosing_UTI
+  - risk_factors_for_UTI
+  - preventing_UTI
+  - importance_of_breast_health
+  - what_is_mammogram
+  - risk_factors_for_breast_cancer
+  - performing_breast_self_exams
+  - signs_and_symptoms_of_breast_cancer
+  - importance_of_ovarian_health
+  - risk_factors_for_ovarian_cancer
+  - diagnosing_ovarian_cancer
+  - symptoms_of_ovarian_cancer
+  - raising_awareness_about_ovarian_cancer
+  - hormonal_imbalances_and_reproductive_health
+  - common_hormonal_disorders_in_women
+  - diagnosing_hormonal_imbalances
+  - treatment_options_for_hormonal_imbalances
+  - lifestyle_factors_and_hormonal_balance
+  - importance_of_reproductive_health
+  - importance_of_reproductive_health_for_women
+  - key_components_of_reproductive_healthcare_for_women
+  - advocating_for_reproductive_health_rights
+  - role_of_healthcare_providers_in_promoting_reproductive_health
+  - fertility_preservation_options_for_women
+  - who_might_consider_fertility_preservation
+  - how_does_egg_freezing_work
+  - success_rates_of_fertility_preservation_methods
+  - ethical_considerations_surrounding_fertility_preservation
+  - reproductive_health_changes_with_age
+  - common_reproductive_health_concerns_for_older_women
+  - maintaining_reproductive_health_as_women_age
+  - healthcare_support_for_reproductive_health_as_women_age
+  - challenges_and_opportunities_in_addressing_reproductive_health_as_women_age
+  - thankyou
+ 
+responses:
+
+  utter_thankyou:
+  - text: "You're welcome!"
+    
+  utter_greet:
+  - text: "Hey! I'm Amie, your virtual buddy!.Feel free to ask me anything!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_menstrual_safety:
+  - text: "Yes, menstrual products like tampons and menstrual cups are safe when used correctly. Make sure to follow the instructions provided by the manufacturer and change them regularly to prevent infections."
+
+  utter_affordability_solution:
+  - text: "Many organizations and charities provide free or low-cost menstrual products to those in need. You can also explore alternative options like reusable cloth pads or menstrual cups."
+
+  utter_scented_product_advice:
+  - text: "It's best to avoid scented menstrual products as they can disrupt the natural pH balance of the vagina and increase the risk of irritation or infection. Opt for unscented products instead."
+
+  utter_cleaning_instructions:
+  - text: "Follow the cleaning instructions provided by the manufacturer. Typically, reusable menstrual products can be washed with warm water and mild soap, then thoroughly rinsed and dried before reuse."
+
+  utter_swimming_exercise_assurance:
+  - text: "Yes, you can swim and exercise during your period. Use appropriate menstrual products like tampons or menstrual cups to prevent leakage, and consider wearing dark-colored swimwear or workout clothes for added confidence."
+
+  utter_disposal_guidance:
+  - text: "Dispose of menstrual waste discreetly in designated bins or sanitary disposal bags. If you're in a public restroom, wrap used products in toilet paper before disposing of them to maintain privacy."
+
+  utter_itching_irritation_advice:
+  - text: "Itching or irritation could be a sign of an allergic reaction to certain menstrual products or an indication of a vaginal infection. Consult a healthcare provider for an accurate diagnosis and appropriate treatment."
+
+  utter_late_period_advice:
+  - text: "Occasional late periods are common and can be caused by factors like stress, changes in diet or exercise, or hormonal fluctuations. However, if your period is significantly delayed or irregular, it's best to consult a healthcare provider for evaluation."
+
+  utter_irregular_periods_explanation:
+  - text: "Irregular periods can sometimes indicate an underlying fertility issue, but they can also be caused by other factors like hormonal imbalances or lifestyle factors. If you're concerned about fertility, consult a fertility specialist for evaluation and guidance."
+
+  utter_heavy_painful_periods_advice:
+  - text: "Heavy periods (menorrhagia) and severe menstrual cramps (dysmenorrhea) can be signs of underlying health conditions such as endometriosis or uterine fibroids. It's important to discuss these symptoms with a healthcare provider to determine the cause and appropriate treatment."
+
+  utter_missed_periods_advice:
+  - text: "Missed periods (amenorrhea) can be caused by factors such as pregnancy, hormonal imbalances, excessive exercise, significant weight loss or gain, or underlying health conditions like polycystic ovary syndrome (PCOS). Consult a healthcare provider for evaluation and management."
+
+  utter_spotting_between_periods_explanation:
+  - text: "Occasional spotting between periods can be normal, but persistent or heavy spotting may indicate hormonal imbalances, cervical or uterine abnormalities, or infections. It's advisable to seek medical advice for further evaluation."
+
+  utter_sudden_period_stop_advice:
+  - text: "Sudden cessation of periods (secondary amenorrhea) can be caused by factors such as pregnancy, extreme stress, significant weight loss or gain, hormonal imbalances, or certain medications. Consult a healthcare provider for assessment and appropriate management."
+
+  utter_irregular_periods_fertility_advice:
+  - text: "If you're experiencing irregular periods and are concerned about fertility, schedule an appointment with a reproductive endocrinologist or gynecologist specializing in fertility. They can perform tests to identify the underlying cause and recommend appropriate treatment options."
+
+  utter_track_cycle_method:
+  - text: "You can track your menstrual cycle by marking the start and end dates of your period on a calendar or using period tracking apps. Note any symptoms or changes in your cycle to identify patterns over time."
+
+  utter_track_cycle_info:
+  - text: "Track the start and end dates of your period, flow intensity, any symptoms (e.g., cramps, mood changes), and any factors that may influence your cycle (e.g., stress, diet, exercise)."
+
+  utter_track_cycle_importance:
+  - text: "Tracking your menstrual cycle helps you understand your body's natural rhythm, identify irregularities or abnormalities, and predict ovulation and fertile days for family planning or contraception."
+
+  utter_track_cycle_apps_tools:
+  - text: "Yes, there are numerous period tracking apps available for smartphones that make it easy to log and monitor your menstrual cycle, symptoms, and other relevant information."
+
+  utter_track_cycle_changes_irregularities:
+  - text: "If you notice significant changes or irregularities in your menstrual cycle, such as missed periods, unusually heavy bleeding, or persistent symptoms, consult a healthcare provider for evaluation and advice."
+
+  utter_menstrual_disorders_common:
+  - text: "Common menstrual disorders include polycystic ovary syndrome (PCOS), endometriosis, premenstrual syndrome (PMS), and menstrual migraines."
+
+  utter_menstrual_disorders_symptoms:
+  - text: "Symptoms vary depending on the disorder but may include irregular periods, heavy or prolonged bleeding, severe cramps, hormonal imbalances, mood swings, and pelvic pain."
+
+  utter_menstrual_disorders_diagnosis:
+  - text: "Diagnosis involves a medical history review, physical examination, and possibly tests such as blood tests, ultrasound, or imaging studies to evaluate the reproductive organs."
+
+  utter_menstrual_disorders_treatment:
+  - text: "Treatment depends on the specific disorder and may include medications, hormonal therapy, lifestyle modifications, pain management, or surgical interventions."
+
+  utter_menstrual_disorders_fertility:
+  - text: "Yes, certain menstrual disorders like PCOS and endometriosis can affect fertility by disrupting ovulation or causing hormonal imbalances. However, many women with menstrual disorders can conceive with appropriate management and treatment."
+
+  utter_menstrual_myths_avoid_foods:
+  - text: "While some people believe certain foods can worsen menstrual symptoms, there's no strong scientific evidence to support specific dietary restrictions during menstruation. Eating a balanced diet rich in nutrients can help support overall health during your period."
+
+  utter_menstrual_myths_pregnancy_period:
+  - text: "While it's less likely to conceive during your period, it's still possible, especially if you have a shorter menstrual cycle or irregular ovulation. Using contraception is important if you're not trying to conceive."
+
+  utter_menstrual_myths_exercise:
+  - text: "No, exercise can actually help alleviate menstrual symptoms like cramps and mood swings by releasing endorphins and improving blood circulation. Listen to your body and engage in activities that feel comfortable during your period."
+
+  utter_menstrual_myths_tampons_hymen:
+  - text: "Using tampons does not necessarily cause the hymen to break. The hymen can stretch or tear from various activities, including physical exercise, tampon use, or sexual intercourse."
+
+  utter_menstrual_myths_menstrual_blood:
+  - text: "Menstrual blood does not 'go bad' inside the body. However, leaving a tampon in for an extended period of time can increase the risk of bacterial growth and infections like toxic shock syndrome (TSS). It's important to change tampons regularly according to the manufacturer's instructions."
+
+  utter_menstrual_products_types:
+  - text: "Menstrual products include disposable options like pads and tampons, as well as reusable options like menstrual cups and cloth pads."
+
+  utter_menstrual_products_choose:
+  - text: "The right menstrual product depends on factors like your flow intensity, comfort preferences, lifestyle, and budget. You may need to try different options to find what works best for you."
+
+  utter_menstrual_cups_safety:
+  - text: "Yes, menstrual cups are safe when used correctly. They are made of medical-grade silicone or rubber and can be worn for up to 12 hours, providing a comfortable and eco-friendly alternative to tampons or pads."
+
+  utter_menstrual_products_virgin:
+  - text: "Yes, you can use menstrual products like tampons or cups if you're a virgin. Using these products does not affect your virginity or hymen."
+
+  utter_menstrual_products_clean_maintain:
+  - text: "Follow the cleaning instructions provided by the manufacturer. Generally, reusable menstrual products can be washed with warm water and mild soap, then thoroughly rinsed and dried before reuse."
+
+  utter_menstrual_pain_management_methods:
+  - text: "Effective ways to manage menstrual cramps include taking over-the-counter pain relievers, applying heat to the abdomen, practicing relaxation techniques, and staying hydrated."
+
+  utter_menstrual_pain_management_natural_remedies:
+  - text: "Some people find relief from menstrual pain by using natural remedies such as herbal teas, dietary supplements (e.g., magnesium, omega-3 fatty acids), acupuncture, or aromatherapy."
+
+  utter_menstrual_pain_management_see_doctor:
+  - text: "Yes, if you experience severe or debilitating menstrual pain that interferes with your daily activities or quality of life, it's important to consult a healthcare provider for evaluation and treatment options."
+
+  utter_menstrual_pain_management_exercise:
+  - text: "Yes, gentle exercise like walking, yoga, or swimming can help alleviate menstrual pain by releasing endorphins and improving blood circulation. Find activities that you enjoy and feel comfortable doing during your period."
+
+  utter_menstrual_pain_management_lifestyle_changes:
+  - text: "Adopting a healthy lifestyle, including regular exercise, balanced nutrition, stress management, and adequate sleep, can help reduce menstrual pain and promote overall well-being."
+
+  utter_hormonal_changes_mental_health:
+  - text: "Yes, hormonal fluctuations during the menstrual cycle can affect mood, energy levels, and emotional well-being. Some people may experience premenstrual mood changes or exacerbation of existing mental health conditions."
+
+  utter_mental_health_symptoms_cycle:
+  - text: "Common symptoms include mood swings, irritability, anxiety, depression, fatigue, and difficulty concentrating. These symptoms may occur in the days leading up to menstruation (premenstrual phase) and improve once menstruation begins."
+
+  utter_manage_mental_health_symptoms:
+  - text: "Strategies for managing mental health symptoms include practicing self-care, maintaining a healthy lifestyle, seeking support from friends, family, or mental health professionals, and exploring relaxation techniques or therapy."
+
+  utter_supplements_medications_mood:
+  - text: "Some people find relief from mood symptoms by taking supplements like omega-3 fatty acids, vitamin B6, or magnesium. In more severe cases, healthcare providers may prescribe medications or hormone therapy to alleviate symptoms."
+
+  utter_seek_professional_help_mental_health:
+  - text: "If you experience persistent or severe mental health symptoms that interfere with your daily functioning or quality of life, it's important to seek professional help from a mental health provider for assessment and treatment options."
+
+  utter_exercise_during_period:
+  - text: "Yes, you can exercise during your period. In fact, physical activity can help alleviate menstrual symptoms like cramps and improve mood by releasing endorphins."
+
+  utter_types_of_exercises_period:
+  - text: "Gentle exercises like walking, yoga, swimming, or cycling are generally well-tolerated during menstruation. Listen to your body and choose activities that feel comfortable and enjoyable."
+
+  utter_adjust_exercise_based_on_cycle:
+  - text: "Some people find it helpful to adjust their exercise intensity or focus based on where they are in their menstrual cycle. For example, you may prefer gentler activities during the premenstrual phase and more vigorous workouts during other phases."
+
+  utter_exercise_affect_menstrual_cycle:
+  - text: "Intense or excessive exercise, especially in combination with low body fat or high stress levels, can disrupt the menstrual cycle and lead to irregular periods or amenorrhea (absence of periods). It's important to strike a balance and avoid overtraining."
+
+  utter_discomfort_leakage_during_exercise:
+  - text: "Make sure to wear appropriate menstrual products like tampons, menstrual cups, or period-proof underwear to prevent leakage during exercise. If you experience discomfort or pain, take a break and rest, or switch to a lower-impact activity."
+
+  utter_alleviate_menstrual_symptoms_foods:
+  - text: "Some foods may help alleviate menstrual symptoms like cramps, bloating, and fatigue. Examples include foods rich in magnesium (e.g., leafy greens, nuts), omega-3 fatty acids (e.g., fatty fish, flaxseeds), and antioxidants (e.g., berries, dark chocolate)."
+
+  utter_dietary_changes_based_on_cycle:
+  - text: "Some people find it helpful to adjust their diet based on where they are in their menstrual cycle. For example, focusing on iron-rich foods during menstruation to replenish iron loss from bleeding."
+
+  utter_avoid_foods_during_period:
+  - text: "While there are no specific foods you need to avoid during your period, some people find that reducing caffeine, alcohol, and salty or processed foods can help alleviate bloating and discomfort."
+
+  utter_nutrition_affect_menstrual_cycle:
+  - text: "Yes, nutrition plays a role in hormonal balance and overall menstrual health. Eating a balanced diet with adequate nutrients, fiber, and hydration can support regular menstrual cycles and alleviate symptoms."
+
+  utter_food_cravings_during_cycle:
+  - text: "Yes, it's common to experience food cravings, particularly for sweets or comfort foods, during the menstrual cycle due to hormonal changes and fluctuations in mood. It's okay to indulge in moderation, but aim for balance and nourishment in your diet overall."
+
+  utter_what_is_pcod:
+  - text: "PCOD is a hormonal disorder that affects women of reproductive age. It is characterized by irregular periods, cysts on the ovaries, and hormonal imbalances."
+
+  utter_pcod_symptoms:
+  - text: "Symptoms of PCOD include irregular menstrual cycles, excessive hair growth (hirsutism), acne, weight gain, and difficulty conceiving."
+
+  utter_diagnose_pcod:
+  - text: "PCOD is typically diagnosed through a combination of medical history review, physical examination, blood tests to measure hormone levels, and imaging tests such as ultrasound to assess the ovaries."
+
+  utter_treatment_options_pcod:
+  - text: "Treatment for PCOD aims to manage symptoms and reduce the risk of complications. Treatment may include lifestyle changes (e.g., diet, exercise), medications to regulate menstrual cycles or manage symptoms, and fertility treatments for those trying to conceive."
+
+  utter_cure_pcod:
+  - text: "PCOD cannot be cured, but symptoms can be managed effectively with appropriate treatment and lifestyle modifications. Regular monitoring and management are important to prevent long-term complications such as infertility or diabetes."
+
+  utter_what_is_pms:
+  - text: "PMS is a combination of physical and emotional symptoms that occur in the days leading up to menstruation. These symptoms can include mood swings, irritability, anxiety, depression, fatigue, bloating, and breast tenderness."
+
+  utter_commonality_of_pms:
+  - text: "PMS is common, with up to 80% of menstruating individuals experiencing at least some symptoms. For some people, symptoms can be mild and manageable, while for others, they can be severe and significantly impact daily functioning."
+
+  utter_causes_of_pms:
+  - text: "The exact cause of PMS is not fully understood, but hormonal fluctuations, particularly changes in estrogen and progesterone levels, are believed to play a role. Other factors such as neurotransmitter changes, genetics, and lifestyle factors may also contribute."
+
+  utter_treatment_of_pms:
+  - text: "Treatment for PMS aims to alleviate symptoms and improve quality of life. Treatment options may include lifestyle modifications (e.g., exercise, stress management, dietary changes), medications (e.g., antidepressants, hormonal contraceptives), and complementary therapies (e.g., acupuncture, herbal supplements)."
+
+  utter_seek_help_for_pms:
+  - text: "If PMS symptoms are severe, persistent, or significantly interfere with daily functioning, it's important to seek help from a healthcare provider. They can provide a proper diagnosis, evaluate for any underlying conditions, and recommend appropriate treatment options."
+
+  utter_what_is_menopause:
+  - text: "Menopause is a natural biological process that marks the end of menstruation and fertility in women. It is diagnosed after 12 consecutive months without a menstrual period."
+
+  utter_symptoms_of_menopause:
+  - text: "Symptoms of menopause can include hot flashes, night sweats, vaginal dryness, mood swings, sleep disturbances, and changes in libido. These symptoms are caused by hormonal changes, particularly a decline in estrogen levels."
+
+  utter_age_of_menopause:
+  - text: "Menopause typically occurs between the ages of 45 and 55, with the average age being around 51. However, the timing can vary widely among individuals."
+
+  utter_diagnose_menopause:
+  - text: "Menopause is diagnosed based on a combination of symptoms, medical history, and laboratory tests to measure hormone levels. Blood tests may be used to assess levels of estrogen, follicle-stimulating hormone (FSH), and other hormones."
+
+  utter_treatment_of_menopause:
+  - text: "Treatment for menopausal symptoms may include hormone replacement therapy (HRT), non-hormonal medications, lifestyle modifications (e.g., diet, exercise), and complementary therapies (e.g., acupuncture, herbal supplements)."
+
+  utter_causes_of_menstrual_pain:
+  - text: "Menstrual pain, also known as dysmenorrhea, is caused by the release of prostaglandins, which trigger uterine contractions and inflammation. Other factors such as hormonal imbalances, pelvic conditions, and lifestyle factors may also contribute."
+
+  utter_relieve_menstrual_pain:
+  - text: "Effective ways to relieve menstrual pain include taking over-the-counter pain relievers (e.g., ibuprofen, acetaminophen), applying heat to the abdomen (e.g., heating pad, warm bath), practicing relaxation techniques (e.g., deep breathing, meditation), and gentle exercise."
+
+  utter_natural_remedies_for_menstrual_pain:
+  - text: "Some people find relief from menstrual pain using natural remedies such as herbal teas (e.g., chamomile, ginger), dietary supplements (e.g., magnesium, omega-3 fatty acids), and aromatherapy (e.g., lavender, peppermint)."
+
+  utter_see_doctor_for_menstrual_pain:
+  - text: "If menstrual pain is severe, persistent, or significantly interferes with daily functioning, it's important to seek help from a healthcare provider. They can evaluate for any underlying conditions and recommend appropriate treatment options."
+
+  utter_lifestyle_changes_for_menstrual_pain:
+  - text: "Yes, lifestyle changes such as regular exercise, stress management, healthy diet, and adequate hydration can help reduce menstrual pain and improve overall well-being."
+
+  utter_reproductive_health_vaccines:
+  - text: "Vaccines recommended for reproductive health include the human papillomavirus (HPV) vaccine to prevent cervical cancer, hepatitis B vaccine to prevent liver infections, and rubella vaccine to prevent birth defects during pregnancy."
+
+  utter_hpv_vaccine_recommendation:
+  - text: "The HPV vaccine is recommended for girls and boys aged 11-12 years, with catch-up vaccination for females up to age 26 and males up to age 21 who haven't been vaccinated previously."
+
+  utter_safety_of_vaccines_during_pregnancy:
+  - text: "Some vaccines are safe during pregnancy, such as the flu vaccine and Tdap vaccine (tetanus, diphtheria, and pertussis). However, live vaccines like MMR (measles, mumps, rubella) and varicella should be avoided during pregnancy."
+
+  utter_vaccine_protection_for_reproductive_health:
+  - text: "Vaccines protect reproductive health by preventing infections that can lead to complications such as infertility, pregnancy loss, birth defects, and certain cancers."
+
+  utter_side_effects_of_reproductive_health_vaccines:
+  - text: "Most side effects of vaccines are mild and temporary, such as soreness at the injection site or mild fever. Serious side effects are rare but can occur. It's important to discuss any concerns with a healthcare provider."
+
+  utter_contraceptive_methods_available:
+  - text: "Contraceptive methods include hormonal methods (e.g., birth control pills, patches, injections), barrier methods (e.g., condoms, diaphragms), intrauterine devices (IUDs), sterilization (e.g., tubal ligation, vasectomy), fertility awareness methods, and emergency contraception."
+
+  utter_how_hormonal_contraceptives_work:
+  - text: "Hormonal contraceptives contain synthetic hormones (estrogen and/or progestin) that prevent ovulation, thicken cervical mucus to block sperm, and thin the uterine lining to prevent implantation of a fertilized egg."
+
+  utter_benefits_of_LARCs:
+  - text: "Long-acting reversible contraceptives (LARCs) like IUDs are highly effective, convenient, and reversible methods of contraception. They provide long-term protection against pregnancy without the need for daily or monthly administration."
+
+  utter_contraceptives_and_STI_protection:
+  - text: "No, most contraceptives do not protect against STIs. Only male and female condoms provide some protection against STIs by creating a barrier between partners and preventing contact with bodily fluids."
+
+  utter_choosing_right_contraceptive_method:
+  - text: "Choosing the right contraceptive method depends on factors such as effectiveness, convenience, health considerations, lifestyle, and personal preferences. It's important to discuss options with a healthcare provider to find the best fit."
+
+  utter_what_are_STDs:
+  - text: "STDs are infections transmitted through sexual contact, including vaginal, anal, or oral sex. Common STDs include chlamydia, gonorrhea, syphilis, genital herpes, human papillomavirus (HPV), HIV/AIDS, and trichomoniasis."
+
+  utter_preventing_STDs:
+  - text: "STDs can be prevented by practicing safe sex, which includes consistent and correct use of condoms, limiting sexual partners, and communication with partners about STD testing and status. Vaccination against HPV and hepatitis B also helps prevent certain STDs."
+
+  utter_symptoms_of_STDs:
+  - text: "Symptoms of STDs vary depending on the infection but may include genital itching, burning during urination, unusual discharge, genital sores or ulcers, pain during sex, and flu-like symptoms. However, some STDs may not cause noticeable symptoms."
+
+  utter_diagnosing_STDs:
+  - text: "STDs are diagnosed through various methods, including physical examination, laboratory tests (e.g., urine tests, blood tests, swabs of genital or oral lesions), and screening programs. Testing may vary depending on the suspected infection and individual risk factors."
+
+  utter_what_to_do_if_suspect_STD:
+  - text: "If you suspect you have an STD or have been exposed to one, it's important to seek medical care promptly. A healthcare provider can perform tests for accurate diagnosis, provide appropriate treatment, and offer counseling on prevention and safer sex practices."
+
+  utter_what_is_UTI:
+  - text: "A UTI is an infection affecting any part of the urinary tract, including the bladder, urethra, ureters, and kidneys. UTIs are usually caused by bacteria, most commonly Escherichia coli (E. coli) from the digestive tract."
+
+  utter_symptoms_of_UTI:
+  - text: "Symptoms of a UTI may include frequent and painful urination, urgency to urinate, cloudy or bloody urine, pelvic pain, and fever. UTI symptoms can vary depending on the location and severity of the infection."
+
+  utter_diagnosing_UTI:
+  - text: "UTIs are diagnosed through a combination of medical history review, physical examination, and laboratory tests such as urinalysis and urine culture. Imaging tests may be performed in recurrent or complicated cases to evaluate for underlying issues."
+
+  utter_risk_factors_for_UTI:
+  - text: "Risk factors for UTIs in women include female anatomy (shorter urethra), sexual activity, contraceptive use (e.g., diaphragms, spermicides), urinary tract abnormalities, menopause, and conditions like diabetes or urinary retention."
+
+  utter_preventing_UTI:
+  - text: "UTIs can be prevented by staying hydrated, urinating after sex, practicing good hygiene (e.g., wiping from front to back), avoiding irritants (e.g., perfumed products, harsh soaps), and addressing risk factors through lifestyle modifications or medical interventions."
+
+  utter_importance_of_breast_health:
+  - text: "Breast health is important for women because breast cancer is one of the most common cancers worldwide. Regular breast self-exams, clinical breast exams, and mammograms can help detect abnormalities early when treatment is most effective."
+
+  utter_what_is_mammogram:
+  - text: "A mammogram is an X-ray of the breast used to detect breast cancer early, often before symptoms are present. Guidelines vary, but many recommend starting regular mammograms at age 40, with earlier screening for women at higher risk."
+
+  utter_risk_factors_for_breast_cancer:
+  - text: "Risk factors for breast cancer include age, family history, genetic mutations (e.g., BRCA1/BRCA2), personal history of breast cancer or certain benign breast conditions, hormonal factors (e.g., early menstruation, late menopause), and lifestyle factors (e.g., alcohol consumption, obesity)."
+
+  utter_performing_breast_self_exams:
+  - text: "Women can perform breast self-exams by visually inspecting and feeling their breasts for any changes in size, shape, texture, or appearance. It's important to perform self-exams regularly and report any abnormalities to a healthcare provider."
+
+  utter_signs_and_symptoms_of_breast_cancer:
+  - text: "Signs and symptoms of breast cancer may include a lump or mass in the breast or underarm, changes in breast size or shape, nipple changes (e.g., inversion, discharge), redness or dimpling of the breast skin, and persistent breast pain."
+
+  utter_importance_of_ovarian_health:
+  - text: "Ovarian health is important for women because ovarian cancer is often diagnosed at an advanced stage when treatment options are limited. Awareness of ovarian cancer symptoms and risk factors can lead to earlier detection and improved outcomes."
+
+  utter_risk_factors_for_ovarian_cancer:
+  - text: "Risk factors for ovarian cancer include family history of ovarian or breast cancer, genetic mutations (e.g., BRCA1/BRCA2), age (risk increases with age), hormonal factors, reproductive history (e.g., never giving birth), and certain medical conditions (e.g., endometriosis)."
+
+  utter_diagnosing_ovarian_cancer:
+  - text: "Ovarian cancer is diagnosed through a combination of medical history review, physical examination, imaging tests (e.g., ultrasound, CT scan), and blood tests to measure tumor markers (e.g., CA-125). Definitive diagnosis is made through biopsy."
+
+  utter_symptoms_of_ovarian_cancer:
+  - text: "Symptoms of ovarian cancer may include abdominal or pelvic pain, bloating, difficulty eating or feeling full quickly, urinary urgency or frequency, changes in bowel habits, and unexplained weight loss. These symptoms are often vague and can mimic other conditions."
+
+  utter_raising_awareness_about_ovarian_cancer:
+  - text: "Women can raise awareness about ovarian cancer by sharing information about symptoms, risk factors, and early detection methods with friends, family, and communities. Participation in awareness campaigns, fundraising events, and support groups can also make a difference."
+
+  utter_hormonal_imbalances_and_reproductive_health:
+  - text: "Hormonal imbalances occur when there is an excess or deficiency of certain hormones in the body. These imbalances can disrupt reproductive health by affecting menstrual cycles, fertility, sexual function, and overall well-being."
+
+  utter_common_hormonal_disorders_in_women:
+  - text: "Common hormonal disorders affecting women include polycystic ovary syndrome (PCOS), thyroid disorders (e.g., hypothyroidism, hyperthyroidism), diabetes, adrenal disorders (e.g., Cushing's syndrome, adrenal insufficiency), and pituitary disorders."
+
+  utter_diagnosing_hormonal_imbalances:
+  - text: "Hormonal imbalances are diagnosed through a combination of medical history review, physical examination, blood tests to measure hormone levels, and imaging tests to evaluate for underlying causes (e.g., tumors, cysts)."
+
+  utter_treatment_options_for_hormonal_imbalances:
+  - text: "Treatment for hormonal imbalances depends on the underlying cause and may include medications (e.g., hormone replacement therapy, thyroid medication), lifestyle modifications (e.g., diet, exercise), and surgical interventions (e.g., removal of tumors)."
+
+  utter_lifestyle_factors_and_hormonal_balance:
+  - text: "Yes, lifestyle factors such as diet, exercise, stress management, sleep quality, and exposure to environmental toxins can affect hormonal balance. Adopting healthy habits and avoiding known hormone disruptors can help promote hormonal health."
+
+  utter_importance_of_reproductive_health:
+  - text: "Reproductive health encompasses the physical, mental, and social well-being related to the reproductive system throughout all stages of life. It includes aspects such as family planning, pregnancy, childbirth, and prevention and management of reproductive disorders."
+
+  utter_importance_of_reproductive_health_for_women:
+  - text: "Reproductive health is important for women as it directly affects their overall well-being, quality of life, and ability to make informed choices about their bodies and reproductive lives. Access to reproductive healthcare services ensures women can maintain optimal health throughout their lives."
+
+  utter_key_components_of_reproductive_healthcare_for_women:
+  - text: "Key components of reproductive healthcare for women include access to contraception and family planning services, prenatal care, maternal and child health services, screening for reproductive cancers and sexually transmitted infections (STIs), and management of reproductive disorders and infertility."
+
+  utter_advocating_for_reproductive_health_rights:
+  - text: "Women can advocate for their reproductive health rights by raising awareness about reproductive health issues, supporting policies that promote access to reproductive healthcare services, participating in advocacy campaigns, and demanding equitable and respectful treatment in healthcare settings."
+
+  utter_role_of_healthcare_providers_in_promoting_reproductive_health:
+  - text: "Healthcare providers play a crucial role in promoting women's reproductive health by providing comprehensive and non-judgmental care, offering education and counseling on reproductive health topics, facilitating access to reproductive healthcare services, and advocating for policies that prioritize women's health."
+
+  utter_fertility_preservation_options_for_women:
+  - text: "Fertility preservation options for women include egg freezing (oocyte cryopreservation), embryo freezing (cryopreservation), ovarian tissue freezing, and hormonal suppression to protect the ovaries during cancer treatment."
+
+  utter_who_might_consider_fertility_preservation:
+  - text: "Women facing medical treatments that may affect fertility, such as chemotherapy or radiation therapy for cancer, may consider fertility preservation. Other reasons include delaying childbearing due to personal or career goals or undergoing gender-affirming hormone therapy."
+
+  utter_how_does_egg_freezing_work:
+  - text: "Egg freezing involves stimulating the ovaries with hormonal medications to produce multiple eggs, which are then retrieved via a minimally invasive procedure. The eggs are frozen and stored until needed, at which point they can be thawed, fertilized, and transferred to the uterus as embryos."
+
+  utter_success_rates_of_fertility_preservation_methods:
+  - text: "Success rates vary depending on factors such as the woman's age, ovarian reserve, and the method used. Generally, younger women have better outcomes with fertility preservation. It's important to discuss success rates and potential risks with a fertility specialist."
+
+  utter_ethical_considerations_surrounding_fertility_preservation:
+  - text: "Ethical considerations include ensuring informed consent, addressing concerns about the long-term safety of fertility preservation techniques, and equitable access to these services. There may also be ethical questions related to the disposal of unused embryos or eggs."
+
+  utter_reproductive_health_changes_with_age:
+  - text: "Reproductive health changes with age in women due to factors such as declining fertility, changes in menstrual patterns (e.g., perimenopause, menopause), increased risk of reproductive cancers (e.g., breast, ovarian), and changes in sexual health and function."
+
+  utter_common_reproductive_health_concerns_for_older_women:
+  - text: "Common reproductive health concerns for older women include menopause symptoms (e.g., hot flashes, vaginal dryness), osteoporosis, heart disease, urinary incontinence, pelvic floor disorders, and sexual dysfunction."
+
+  utter_maintaining_reproductive_health_as_women_age:
+  - text: "Women can maintain reproductive health as they age by adopting healthy lifestyle habits, including regular exercise, balanced nutrition, adequate sleep, stress management, and avoiding harmful behaviors (e.g., smoking, excessive alcohol consumption)."
+
+  utter_healthcare_support_for_reproductive_health_as_women_age:
+  - text: "Healthcare providers play a crucial role in supporting reproductive health as women age by providing preventive screenings, counseling on menopause management and hormone therapy, addressing age-related health concerns, and promoting healthy aging strategies."
+
+  utter_challenges_and_opportunities_in_addressing_reproductive_health_as_women_age:
+  - text: "Challenges include stigma and misinformation surrounding menopause and aging, limited access to menopause care and sexual health services, and disparities in healthcare access and quality. Opportunities include advancing research on menopause management and promoting holistic approaches to women's health across the lifespan."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
