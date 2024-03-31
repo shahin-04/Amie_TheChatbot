@@ -1,0 +1,639 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to menstrual safety concerns
+  steps:
+  - intent: menstrual_safety
+  - action: utter_menstrual_safety
+
+- rule: Address affordability concerns
+  steps:
+  - intent: affordability
+  - action: utter_affordability_solution
+
+- rule: Advise against scented products
+  steps:
+  - intent: scented_products
+  - action: utter_scented_product_advice
+
+- rule: Provide cleaning instructions for reusable products
+  steps:
+  - intent: cleaning_instructions
+  - action: utter_cleaning_instructions
+
+- rule: Assure about swimming and exercising during period
+  steps:
+  - intent: swimming_exercise
+  - action: utter_swimming_exercise_assurance
+
+- rule: Guide on discreet disposal methods
+  steps:
+  - intent: disposal_embarrassment
+  - action: utter_disposal_guidance
+
+- rule: Address itching or irritation concerns
+  steps:
+  - intent: itching_irritation
+  - action: utter_itching_irritation_advice
+
+- rule: Respond to concerns about late periods
+  steps:
+  - intent: late_period
+  - action: utter_late_period_advice
+
+- rule: Address questions about irregular periods
+  steps:
+  - intent: irregular_periods
+  - action: utter_irregular_periods_explanation
+
+- rule: Provide guidance on heavy and painful periods
+  steps:
+  - intent: heavy_painful_periods
+  - action: utter_heavy_painful_periods_advice
+
+- rule: Assist with missed periods concerns
+  steps:
+  - intent: missed_periods
+  - action: utter_missed_periods_advice
+
+- rule: Handle questions about spotting between periods
+  steps:
+  - intent: spotting_between_periods
+  - action: utter_spotting_between_periods_explanation
+
+- rule: Address sudden cessation of periods
+  steps:
+  - intent: sudden_period_stop
+  - action: utter_sudden_period_stop_advice
+
+- rule: Provide guidance for irregular periods and fertility concerns
+  steps:
+  - intent: irregular_periods_fertility_concern
+  - action: utter_irregular_periods_fertility_advice
+
+- rule: Respond to questions about tracking menstrual cycle method
+  steps:
+  - intent: track_cycle_method
+  - action: utter_track_cycle_method
+
+- rule: Address inquiries regarding information to track in menstrual cycle
+  steps:
+  - intent: track_cycle_info
+  - action: utter_track_cycle_info
+
+- rule: Explain the importance of tracking menstrual cycle
+  steps:
+  - intent: track_cycle_importance
+  - action: utter_track_cycle_importance
+
+- rule: Recommend apps or tools for tracking menstrual cycle
+  steps:
+  - intent: track_cycle_apps_tools
+  - action: utter_track_cycle_apps_tools
+
+- rule: Advise on handling changes or irregularities in menstrual cycle tracking
+  steps:
+  - intent: track_cycle_changes_irregularities
+  - action: utter_track_cycle_changes_irregularities
+
+- rule: Respond to inquiries about common menstrual disorders
+  steps:
+  - intent: menstrual_disorders_common
+  - action: utter_menstrual_disorders_common
+
+- rule: Address questions about symptoms of menstrual disorders
+  steps:
+  - intent: menstrual_disorders_symptoms
+  - action: utter_menstrual_disorders_symptoms
+
+- rule: Explain the diagnosis process for menstrual disorders
+  steps:
+  - intent: menstrual_disorders_diagnosis
+  - action: utter_menstrual_disorders_diagnosis
+
+- rule: Provide information on treatment options for menstrual disorders
+  steps:
+  - intent: menstrual_disorders_treatment
+  - action: utter_menstrual_disorders_treatment
+
+- rule: Discuss the impact of menstrual disorders on fertility
+  steps:
+  - intent: menstrual_disorders_fertility
+  - action: utter_menstrual_disorders_fertility
+
+- rule: Respond to questions about myths regarding avoiding foods during menstruation
+  steps:
+  - intent: menstrual_myths_avoid_foods
+  - action: utter_menstrual_myths_avoid_foods
+
+- rule: Address misconceptions about pregnancy during menstruation
+  steps:
+  - intent: menstrual_myths_pregnancy_period
+  - action: utter_menstrual_myths_pregnancy_period
+
+- rule: Clarify misconceptions about exercise during menstruation
+  steps:
+  - intent: menstrual_myths_exercise
+  - action: utter_menstrual_myths_exercise
+
+- rule: Respond to myths about tampons and hymen integrity
+  steps:
+  - intent: menstrual_myths_tampons_hymen
+  - action: utter_menstrual_myths_tampons_hymen
+
+- rule: Address misconceptions about menstrual blood toxicity
+  steps:
+  - intent: menstrual_myths_menstrual_blood
+  - action: utter_menstrual_myths_menstrual_blood
+
+- rule: Respond to inquiries about different types of menstrual products
+  steps:
+  - intent: menstrual_products_types
+  - action: utter_menstrual_products_types
+
+- rule: Guide on choosing the right menstrual product
+  steps:
+  - intent: menstrual_products_choose
+  - action: utter_menstrual_products_choose
+
+- rule: Address safety concerns regarding menstrual cups
+  steps:
+  - intent: menstrual_cups_safety
+  - action: utter_menstrual_cups_safety
+
+- rule: Clarify the use of menstrual products for virgins
+  steps:
+  - intent: menstrual_products_virgin
+  - action: utter_menstrual_products_virgin
+
+- rule: Provide instructions for cleaning and maintaining reusable menstrual products
+  steps:
+  - intent: menstrual_products_clean_maintain
+  - action: utter_menstrual_products_clean_maintain
+
+- rule: Respond to inquiries about effective methods for menstrual pain management
+  steps:
+  - intent: menstrual_pain_management_methods
+  - action: utter_menstrual_pain_management_methods
+
+- rule: Discuss natural remedies for menstrual pain
+  steps:
+  - intent: menstrual_pain_management_natural_remedies
+  - action: utter_menstrual_pain_management_natural_remedies
+
+- rule: Advise on when to see a healthcare provider for severe menstrual pain
+  steps:
+  - intent: menstrual_pain_management_see_doctor
+  - action: utter_menstrual_pain_management_see_doctor
+
+- rule: Address the role of exercise in managing menstrual pain
+  steps:
+  - intent: menstrual_pain_management_exercise
+  - action: utter_menstrual_pain_management_exercise
+
+- rule: Provide guidance on lifestyle changes to reduce menstrual pain
+  steps:
+  - intent: menstrual_pain_management_lifestyle_changes
+  - action: utter_menstrual_pain_management_lifestyle_changes
+
+- rule: Respond to inquiries about hormonal changes affecting mental health
+  steps:
+  - intent: hormonal_changes_mental_health
+  - action: utter_hormonal_changes_mental_health
+
+- rule: Provide information on common mental health symptoms during the menstrual cycle
+  steps:
+  - intent: mental_health_symptoms_cycle
+  - action: utter_mental_health_symptoms_cycle
+
+- rule: Offer guidance on managing mental health symptoms related to the menstrual cycle
+  steps:
+  - intent: manage_mental_health_symptoms
+  - action: utter_manage_mental_health_symptoms
+
+- rule: Discuss supplements or medications for improving mood during the menstrual cycle
+  steps:
+  - intent: supplements_medications_mood
+  - action: utter_supplements_medications_mood
+
+- rule: Advise on seeking professional help for mental health symptoms during menstruation
+  steps:
+  - intent: seek_professional_help_mental_health
+  - action: utter_seek_professional_help_mental_health
+
+- rule: Address exercising during menstruation
+  steps:
+  - intent: exercise_during_period
+  - action: utter_exercise_during_period
+
+- rule: Recommend specific types of exercises for menstruation
+  steps:
+  - intent: types_of_exercises_period
+  - action: utter_types_of_exercises_period
+
+- rule: Discuss adjusting exercise routines based on the menstrual cycle
+  steps:
+  - intent: adjust_exercise_based_on_cycle
+  - action: utter_adjust_exercise_based_on_cycle
+
+- rule: Clarify the impact of exercise on the menstrual cycle
+  steps:
+  - intent: exercise_affect_menstrual_cycle
+  - action: utter_exercise_affect_menstrual_cycle
+
+- rule: Provide advice for managing discomfort or leakage during exercise
+  steps:
+  - intent: discomfort_leakage_during_exercise
+  - action: utter_discomfort_leakage_during_exercise
+
+- rule: Provide information on foods that alleviate menstrual symptoms
+  steps:
+  - intent: alleviate_menstrual_symptoms_foods
+  - action: utter_alleviate_menstrual_symptoms_foods
+
+- rule: Discuss dietary changes based on the menstrual cycle
+  steps:
+  - intent: dietary_changes_based_on_cycle
+  - action: utter_dietary_changes_based_on_cycle
+
+- rule: Offer advice on foods to avoid during menstruation
+  steps:
+  - intent: avoid_foods_during_period
+  - action: utter_avoid_foods_during_period
+
+- rule: Explain how nutrition can affect the menstrual cycle
+  steps:
+  - intent: nutrition_affect_menstrual_cycle
+  - action: utter_nutrition_affect_menstrual_cycle
+
+- rule: Address inquiries about food cravings during the menstrual cycle
+  steps:
+  - intent: food_cravings_during_cycle
+  - action: utter_food_cravings_during_cycle
+
+- rule: Explain what PCOD is
+  steps:
+  - intent: what_is_pcod
+  - action: utter_what_is_pcod
+
+- rule: Discuss symptoms of PCOD
+  steps:
+  - intent: pcod_symptoms
+  - action: utter_pcod_symptoms
+
+- rule: Clarify how PCOD is diagnosed
+  steps:
+  - intent: diagnose_pcod
+  - action: utter_diagnose_pcod
+
+- rule: Provide information on treatment options for PCOD
+  steps:
+  - intent: treatment_options_pcod
+  - action: utter_treatment_options_pcod
+
+- rule: Address questions about the possibility of curing PCOD
+  steps:
+  - intent: cure_pcod
+  - action: utter_cure_pcod
+
+- rule: Provide information on what PMS is
+  steps:
+  - intent: what_is_pms
+  - action: utter_what_is_pms
+
+- rule: Discuss the commonality of PMS
+  steps:
+  - intent: commonality_of_pms
+  - action: utter_commonality_of_pms
+
+- rule: Explain the causes of PMS
+  steps:
+  - intent: causes_of_pms
+  - action: utter_causes_of_pms
+
+- rule: Offer treatment options for PMS
+  steps:
+  - intent: treatment_of_pms
+  - action: utter_treatment_of_pms
+
+- rule: Address when to seek help for PMS symptoms
+  steps:
+  - intent: seek_help_for_pms
+  - action: utter_seek_help_for_pms
+
+- rule: Explain what menopause is
+  steps:
+  - intent: what_is_menopause
+  - action: utter_what_is_menopause
+
+- rule: Discuss symptoms of menopause
+  steps:
+  - intent: symptoms_of_menopause
+  - action: utter_symptoms_of_menopause
+
+- rule: Clarify the typical age of menopause
+  steps:
+  - intent: age_of_menopause
+  - action: utter_age_of_menopause
+
+- rule: Address how menopause is diagnosed
+  steps:
+  - intent: diagnose_menopause
+  - action: utter_diagnose_menopause
+
+- rule: Provide information on treatment options for menopausal symptoms
+  steps:
+  - intent: treatment_of_menopause
+  - action: utter_treatment_of_menopause
+
+- rule: Explain the causes of menstrual pain
+  steps:
+  - intent: causes_of_menstrual_pain
+  - action: utter_causes_of_menstrual_pain
+
+- rule: Offer ways to relieve menstrual pain
+  steps:
+  - intent: relieve_menstrual_pain
+  - action: utter_relieve_menstrual_pain
+
+- rule: Discuss natural remedies for menstrual pain
+  steps:
+  - intent: natural_remedies_for_menstrual_pain
+  - action: utter_natural_remedies_for_menstrual_pain
+
+- rule: Address when to see a doctor for menstrual pain
+  steps:
+  - intent: see_doctor_for_menstrual_pain
+  - action: utter_see_doctor_for_menstrual_pain
+
+- rule: Provide information on lifestyle changes for menstrual pain
+  steps:
+  - intent: lifestyle_changes_for_menstrual_pain
+  - action: utter_lifestyle_changes_for_menstrual_pain
+
+- rule: Discuss recommended vaccines for reproductive health
+  steps:
+  - intent: reproductive_health_vaccines
+  - action: utter_reproductive_health_vaccines
+
+- rule: Clarify the recommendation for the HPV vaccine
+  steps:
+  - intent: hpv_vaccine_recommendation
+  - action: utter_hpv_vaccine_recommendation
+
+- rule: Address safety of vaccines during pregnancy
+  steps:
+  - intent: safety_of_vaccines_during_pregnancy
+  - action: utter_safety_of_vaccines_during_pregnancy
+
+- rule: Explain how vaccines protect reproductive health
+  steps:
+  - intent: vaccine_protection_for_reproductive_health
+  - action: utter_vaccine_protection_for_reproductive_health
+
+- rule: Discuss side effects of reproductive health vaccines
+  steps:
+  - intent: side_effects_of_reproductive_health_vaccines
+  - action: utter_side_effects_of_reproductive_health_vaccines
+
+- rule: Respond to a query about contraceptive methods available
+  steps:
+  - intent: contraceptive_methods_available
+  - action: utter_contraceptive_methods_available
+
+- rule: Explain how hormonal contraceptives work
+  steps:
+  - intent: how_hormonal_contraceptives_work
+  - action: utter_how_hormonal_contraceptives_work
+
+- rule: Discuss the benefits of LARCs
+  steps:
+  - intent: benefits_of_LARCs
+  - action: utter_benefits_of_LARCs
+
+- rule: Address whether contraceptives can protect against STIs
+  steps:
+  - intent: contraceptives_and_STI_protection
+  - action: utter_contraceptives_and_STI_protection
+
+- rule: Provide guidance on choosing the right contraceptive method
+  steps:
+  - intent: choosing_right_contraceptive_method
+  - action: utter_choosing_right_contraceptive_method
+
+- rule: Define what STDs are
+  steps:
+  - intent: what_are_STDs
+  - action: utter_what_are_STDs
+
+- rule: Explain how to prevent STDs
+  steps:
+  - intent: preventing_STDs
+  - action: utter_preventing_STDs
+
+- rule: Discuss the symptoms of STDs
+  steps:
+  - intent: symptoms_of_STDs
+  - action: utter_symptoms_of_STDs
+
+- rule: Explain how STDs are diagnosed
+  steps:
+  - intent: diagnosing_STDs
+  - action: utter_diagnosing_STDs
+
+- rule: Address what to do if suspecting an STD
+  steps:
+  - intent: what_to_do_if_suspect_STD
+  - action: utter_what_to_do_if_suspect_STD
+
+- rule: Respond to a query about urinary tract infection (UTI)
+  steps:
+  - intent: what_is_UTI
+  - action: utter_what_is_UTI
+
+- rule: Explain the symptoms of a UTI
+  steps:
+  - intent: symptoms_of_UTI
+  - action: utter_symptoms_of_UTI
+
+- rule: Discuss how UTIs are diagnosed
+  steps:
+  - intent: diagnosing_UTI
+  - action: utter_diagnosing_UTI
+
+- rule: Address the risk factors for UTIs in women
+  steps:
+  - intent: risk_factors_for_UTI
+  - action: utter_risk_factors_for_UTI
+
+- rule: Provide guidance on preventing UTIs
+  steps:
+  - intent: preventing_UTI
+  - action: utter_preventing_UTI
+
+- rule: Explain the importance of breast health
+  steps:
+  - intent: importance_of_breast_health
+  - action: utter_importance_of_breast_health
+
+- rule: Discuss mammograms and screening recommendations
+  steps:
+  - intent: what_is_mammogram
+  - action: utter_what_is_mammogram
+
+- rule: Address the risk factors for breast cancer
+  steps:
+  - intent: risk_factors_for_breast_cancer
+  - action: utter_risk_factors_for_breast_cancer
+
+- rule: Explain how to perform breast self-exams
+  steps:
+  - intent: performing_breast_self_exams
+  - action: utter_performing_breast_self_exams
+
+- rule: Discuss signs and symptoms of breast cancer
+  steps:
+  - intent: signs_and_symptoms_of_breast_cancer
+  - action: utter_signs_and_symptoms_of_breast_cancer
+
+- rule: Respond to a query about the importance of ovarian health
+  steps:
+  - intent: importance_of_ovarian_health
+  - action: utter_importance_of_ovarian_health
+
+- rule: Address the risk factors for ovarian cancer
+  steps:
+  - intent: risk_factors_for_ovarian_cancer
+  - action: utter_risk_factors_for_ovarian_cancer
+
+- rule: Discuss how ovarian cancer is diagnosed
+  steps:
+  - intent: diagnosing_ovarian_cancer
+  - action: utter_diagnosing_ovarian_cancer
+
+- rule: Explain the symptoms of ovarian cancer
+  steps:
+  - intent: symptoms_of_ovarian_cancer
+  - action: utter_symptoms_of_ovarian_cancer
+
+- rule: Provide guidance on raising awareness about ovarian cancer
+  steps:
+  - intent: raising_awareness_about_ovarian_cancer
+  - action: utter_raising_awareness_about_ovarian_cancer
+
+- rule: Discuss hormonal imbalances and their impact on reproductive health
+  steps:
+  - intent: hormonal_imbalances_and_reproductive_health
+  - action: utter_hormonal_imbalances_and_reproductive_health
+
+- rule: Address common hormonal disorders affecting women
+  steps:
+  - intent: common_hormonal_disorders_in_women
+  - action: utter_common_hormonal_disorders_in_women
+
+- rule: Explain how hormonal imbalances are diagnosed
+  steps:
+  - intent: diagnosing_hormonal_imbalances
+  - action: utter_diagnosing_hormonal_imbalances
+
+- rule: Discuss treatment options for hormonal imbalances
+  steps:
+  - intent: treatment_options_for_hormonal_imbalances
+  - action: utter_treatment_options_for_hormonal_imbalances
+
+- rule: Address the influence of lifestyle factors on hormonal balance
+  steps:
+  - intent: lifestyle_factors_and_hormonal_balance
+  - action: utter_lifestyle_factors_and_hormonal_balance
+
+- rule: Respond to a query about the importance of reproductive health
+  steps:
+  - intent: importance_of_reproductive_health
+  - action: utter_importance_of_reproductive_health
+
+- rule: Address the importance of reproductive health for women
+  steps:
+  - intent: importance_of_reproductive_health_for_women
+  - action: utter_importance_of_reproductive_health_for_women
+
+- rule: Discuss key components of reproductive healthcare for women
+  steps:
+  - intent: key_components_of_reproductive_healthcare_for_women
+  - action: utter_key_components_of_reproductive_healthcare_for_women
+
+- rule: Provide guidance on advocating for reproductive health rights
+  steps:
+  - intent: advocating_for_reproductive_health_rights
+  - action: utter_advocating_for_reproductive_health_rights
+
+- rule: Explain the role of healthcare providers in promoting reproductive health
+  steps:
+  - intent: role_of_healthcare_providers_in_promoting_reproductive_health
+  - action: utter_role_of_healthcare_providers_in_promoting_reproductive_health
+
+- rule: Respond to a query about fertility preservation options for women
+  steps:
+  - intent: fertility_preservation_options_for_women
+  - action: utter_fertility_preservation_options_for_women
+
+- rule: Address who might consider fertility preservation
+  steps:
+  - intent: who_might_consider_fertility_preservation
+  - action: utter_who_might_consider_fertility_preservation
+
+- rule: Discuss how egg freezing works
+  steps:
+  - intent: how_does_egg_freezing_work
+  - action: utter_how_does_egg_freezing_work
+
+- rule: Provide information on success rates of fertility preservation methods
+  steps:
+  - intent: success_rates_of_fertility_preservation_methods
+  - action: utter_success_rates_of_fertility_preservation_methods
+
+- rule: Address ethical considerations surrounding fertility preservation
+  steps:
+  - intent: ethical_considerations_surrounding_fertility_preservation
+  - action: utter_ethical_considerations_surrounding_fertility_preservation
+
+- rule: Respond to a query about changes in reproductive health with age
+  steps:
+  - intent: reproductive_health_changes_with_age
+  - action: utter_reproductive_health_changes_with_age
+
+- rule: Address common reproductive health concerns for older women
+  steps:
+  - intent: common_reproductive_health_concerns_for_older_women
+  - action: utter_common_reproductive_health_concerns_for_older_women
+
+- rule: Provide guidance on maintaining reproductive health as women age
+  steps:
+  - intent: maintaining_reproductive_health_as_women_age
+  - action: utter_maintaining_reproductive_health_as_women_age
+
+- rule: Explain the role of healthcare in supporting reproductive health as women age
+  steps:
+  - intent: healthcare_support_for_reproductive_health_as_women_age
+  - action: utter_healthcare_support_for_reproductive_health_as_women_age
+
+- rule: Discuss challenges and opportunities in addressing reproductive health as women age
+  steps:
+  - intent: challenges_and_opportunities_in_addressing_reproductive_health_as_women_age
+  - action: utter_challenges_and_opportunities_in_addressing_reproductive_health_as_women_age
+
+- rule: Respond to thank you
+  steps:
+  - intent: thankyou
+  - action: utter_thankyou
+

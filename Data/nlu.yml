@@ -1,0 +1,1091 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: menstrual_safety
+  examples: |
+    - Are menstrual products like tampons or menstrual cups safe?
+    - Can I trust tampons or menstrual cups?
+    - Are tampons and menstrual cups safe to use?
+    - Is it okay to use tampons or menstrual cups?
+    - Are menstrual products safe?
+    - How safe are tampons and menstrual cups?
+
+- intent: affordability
+  examples: |
+    - What if I can't afford menstrual products?
+    - How to get menstrual products if I can't afford them?
+    - Are there options for free menstrual products?
+    - Can I find cheap menstrual products?
+    - Affordable menstrual products options?
+
+- intent: scented_products
+  examples: |
+    - Is it safe to use scented menstrual products?
+    - Can I use scented tampons or pads?
+    - Are scented menstrual products harmful?
+    - Should I avoid scented menstrual products?
+    - Scented vs unscented menstrual products?
+
+- intent: cleaning_instructions
+  examples: |
+    - How to clean reusable menstrual products?
+    - Cleaning cloth pads or menstrual cups?
+    - Proper way to wash menstrual cups?
+    - Washing instructions for cloth pads?
+    - Reusable menstrual products maintenance?
+
+- intent: swimming_exercise
+  examples: |
+    - Can I swim during my period?
+    - Is it okay to exercise while menstruating?
+    - Can I do sports during my period?
+    - Swimming and period?
+    - Exercising on period?
+
+- intent: disposal_embarrassment
+  examples: |
+    - How to dispose of menstrual waste discreetly?
+    - Embarrassed about disposing of menstrual products?
+    - Disposing of menstrual waste in public?
+    - Proper disposal of used menstrual products?
+    - Dealing with menstrual waste in public restrooms?
+
+- intent: itching_irritation
+  examples: |
+    - Experiencing itching or irritation during period?
+    - What causes itching during menstruation?
+    - Itching and irritation during period?
+    - Irritated skin during menstruation?
+    - How to relieve itching during period?
+
+- intent: late_period
+  examples: |
+    - My period is late. Should I be worried?
+    - Is it normal if my period is delayed?
+    - Should I be concerned about my late period?
+    - Why is my period late?
+    - What to do if my period is delayed?
+
+- intent: irregular_periods
+  examples: |
+    - I have irregular periods. What does it mean?
+    - Do irregular periods indicate fertility issues?
+    - Why are my periods irregular?
+    - Is it normal to have irregular menstrual cycles?
+    - Causes of irregular menstrual cycles?
+
+- intent: heavy_painful_periods
+  examples: |
+    - Are heavy and painful periods normal?
+    - My periods are very heavy and painful. Is it okay?
+    - What causes heavy periods and severe cramps?
+    - Should I worry about heavy menstrual bleeding and pain?
+    - Dealing with heavy periods and severe menstrual cramps?
+
+- intent: missed_periods
+  examples: |
+    - I've missed several periods in a row. What's wrong?
+    - Why am I missing periods?
+    - Causes of missed menstrual cycles?
+    - Is it normal to miss periods?
+    - What should I do if I miss my periods?
+
+- intent: spotting_between_periods
+  examples: |
+    - Is it normal to have spotting between periods?
+    - Reasons for spotting between menstrual cycles?
+    - What causes spotting outside of periods?
+    - Should I be concerned about spotting between periods?
+    - Dealing with irregular bleeding between menstrual cycles?
+
+- intent: sudden_period_stop
+  examples: |
+    - My period suddenly stopped. What does it mean?
+    - Why did my period abruptly end?
+    - Causes of sudden cessation of periods?
+    - Is it normal for periods to suddenly stop?
+    - What to do if my period suddenly halts?
+
+- intent: irregular_periods_fertility_concern
+  examples: |
+    - I have irregular periods and worried about fertility. What should I do?
+    - Concerned about fertility due to irregular periods. Help!
+    - How to address irregular periods and fertility concerns?
+    - Steps to take if irregular periods affect fertility?
+    - Seeking advice for irregular periods and fertility issues.
+
+- intent: track_cycle_method
+  examples: |
+    - How do I track my menstrual cycle?
+    - What's the best way to track my period?
+    - Methods for tracking menstrual cycle?
+    - How to monitor my menstrual cycle?
+
+- intent: track_cycle_info
+  examples: |
+    - What information should I track in my menstrual cycle?
+    - Details to note while tracking menstrual cycle?
+    - What to log in my period tracker?
+    - What data is important for menstrual cycle tracking?
+
+- intent: track_cycle_importance
+  examples: |
+    - Why is it important to track my menstrual cycle?
+    - Benefits of tracking menstrual cycle?
+    - Importance of period tracking?
+    - Advantages of monitoring menstrual cycle?
+
+- intent: track_cycle_apps_tools
+  examples: |
+    - Are there any apps or tools for tracking menstrual cycle?
+    - Recommended period tracking apps?
+    - Tools for monitoring menstrual cycle?
+    - Apps to help track my period?
+
+- intent: track_cycle_changes_irregularities
+  examples: |
+    - What to do if I notice changes in my menstrual cycle?
+    - Handling irregularities in menstrual cycle tracking?
+    - Dealing with changes in period patterns?
+    - Actions to take for irregular menstrual cycle?
+
+- intent: menstrual_disorders_common
+  examples: |
+    - What are common menstrual disorders?
+    - List common menstrual disorders.
+    - Common disorders during menstruation?
+    - Examples of menstrual disorders?
+    - Which disorders affect menstruation?
+
+- intent: menstrual_disorders_symptoms
+  examples: |
+    - What are the symptoms of menstrual disorders?
+    - Symptoms of disorders related to menstruation?
+    - Signs of menstrual disorders?
+    - How to recognize menstrual disorders?
+    - What are the common symptoms of menstrual disorders?
+
+- intent: menstrual_disorders_diagnosis
+  examples: |
+    - How are menstrual disorders diagnosed?
+    - What's the process for diagnosing menstrual disorders?
+    - Diagnosis of disorders affecting menstruation?
+    - How do doctors diagnose menstrual disorders?
+    - What tests are used to diagnose menstrual disorders?
+
+- intent: menstrual_disorders_treatment
+  examples: |
+    - What treatment options are available for menstrual disorders?
+    - How are menstrual disorders treated?
+    - Management of disorders during menstruation?
+    - Options for treating menstrual disorders?
+    - What are the treatment modalities for menstrual disorders?
+
+- intent: menstrual_disorders_fertility
+  examples: |
+    - Can menstrual disorders affect fertility or pregnancy?
+    - Impact of menstrual disorders on fertility?
+    - Do disorders during menstruation affect pregnancy?
+    - Fertility implications of menstrual disorders?
+    - Can menstrual problems hinder conception?
+
+- intent: menstrual_myths_avoid_foods
+  examples: |
+    - Are there any foods I should avoid during my period?
+    - Should I restrict certain foods while menstruating?
+    - Dietary restrictions during menstruation?
+    - Foods to avoid during menstrual cycle?
+    - Any specific diet tips for menstruation?
+
+- intent: menstrual_myths_pregnancy_period
+  examples: |
+    - Can I get pregnant during my period?
+    - Is pregnancy possible during menstruation?
+    - Conception chances during period?
+    - Getting pregnant while on period?
+    - Myth about pregnancy and menstruation?
+
+- intent: menstrual_myths_exercise
+  examples: |
+    - Do I need to avoid exercise during my period?
+    - Is it safe to workout during menstruation?
+    - Exercising during menstrual cycle?
+    - Exercise myths during menstruation?
+    - Impact of exercise on period?
+
+- intent: menstrual_myths_tampons_hymen
+  examples: |
+    - Will using tampons cause my hymen to break?
+    - Hymen breaking due to tampon use?
+    - Tampons and hymen rupture?
+    - Myths about tampons and virginity?
+    - Does tampon usage affect hymen integrity?
+
+- intent: menstrual_myths_menstrual_blood
+  examples: |
+    - Can menstrual blood go "bad" if it's held in the body too long?
+    - Does menstrual blood become toxic if not expelled?
+    - Myth about retained menstrual blood?
+    - Menstrual blood poisoning myth?
+    - Dangers of holding menstrual blood?
+
+- intent: menstrual_products_types
+  examples: |
+    - What are the different types of menstrual products available?
+    - Types of products for menstruation?
+    - Options for menstrual hygiene products?
+    - Different menstrual product categories?
+    - What kinds of products can I use during my period?
+
+- intent: menstrual_products_choose
+  examples: |
+    - How do I choose the right menstrual product for me?
+    - Tips for selecting the right period product?
+    - Choosing the best menstrual product?
+    - Factors to consider when choosing menstrual products?
+    - What should I consider when picking a menstrual product?
+
+- intent: menstrual_cups_safety
+  examples: |
+    - Are menstrual cups safe to use?
+    - Safety of menstrual cups?
+    - Are menstrual cups sanitary?
+    - Using menstrual cups - safe or not?
+    - Can menstrual cups cause infections?
+
+- intent: menstrual_products_virgin
+  examples: |
+    - Can I use menstrual products like tampons or cups if I'm a virgin?
+    - Virginity and menstrual products?
+    - Using tampons or cups as a virgin?
+    - Do menstrual products affect virginity?
+    - Is it okay to use tampons or cups if I'm still a virgin?
+
+- intent: menstrual_products_clean_maintain
+  examples: |
+    - How do I clean and maintain reusable menstrual products?
+    - Cleaning reusable menstrual products?
+    - Maintenance of menstrual cups and cloth pads?
+    - Proper care for reusable period products?
+    - Washing instructions for menstrual cups and cloth pads?
+
+- intent: menstrual_pain_management_methods
+  examples: |
+    - What are some effective ways to manage menstrual cramps?
+    - Methods for alleviating menstrual pain?
+    - Tips for managing period pain?
+    - How to relieve menstrual cramps?
+    - Remedies for menstrual pain?
+
+- intent: menstrual_pain_management_natural_remedies
+  examples: |
+    - Are there any natural remedies for menstrual pain?
+    - Natural ways to ease period pain?
+    - Herbal remedies for menstrual cramps?
+    - Home remedies for menstrual discomfort?
+    - Natural solutions for menstrual pain relief?
+
+- intent: menstrual_pain_management_see_doctor
+  examples: |
+    - Should I see a healthcare provider for severe menstrual pain?
+    - Consulting a doctor for menstrual cramps?
+    - When to seek medical help for period pain?
+    - Is severe period pain a reason to visit a doctor?
+    - Medical advice for extreme menstrual discomfort?
+
+- intent: menstrual_pain_management_exercise
+  examples: |
+    - Can exercise help relieve menstrual pain?
+    - Benefits of exercise for period pain?
+    - Physical activity and menstrual cramps?
+    - Does working out reduce menstrual discomfort?
+    - Exercising during menstruation?
+
+- intent: menstrual_pain_management_lifestyle_changes
+  examples: |
+    - Are there any lifestyle changes that can help reduce menstrual pain?
+    - Lifestyle adjustments for managing period pain?
+    - Changing habits to alleviate menstrual cramps?
+    - How to modify lifestyle to ease period discomfort?
+    - Improving lifestyle for better menstrual health?
+
+- intent: hormonal_changes_mental_health
+  examples: |
+    - Can hormonal changes during the menstrual cycle affect mental health?
+    - How do hormonal fluctuations affect mental well-being?
+    - Impact of menstrual cycle on mental health?
+    - Mental health and hormonal changes during menstruation?
+    - Do hormones affect mood during the menstrual cycle?
+
+- intent: mental_health_symptoms_cycle
+  examples: |
+    - What are some common mental health symptoms associated with the menstrual cycle?
+    - Mental health issues during menstruation?
+    - Symptoms of mental health issues related to periods?
+    - Emotional changes during the menstrual cycle?
+    - Common mental health symptoms during menstruation?
+
+- intent: manage_mental_health_symptoms
+  examples: |
+    - How can I manage mental health symptoms related to the menstrual cycle?
+    - Coping strategies for mental health symptoms during menstruation?
+    - Dealing with mood swings during periods?
+    - Ways to improve emotional well-being during the menstrual cycle?
+    - Managing mental health during menstruation?
+
+- intent: supplements_medications_mood
+  examples: |
+    - Are there any supplements or medications that can help improve mood during the menstrual cycle?
+    - Medications for mood swings during menstruation?
+    - Supplements to alleviate mental health symptoms during periods?
+    - Treatment options for mood changes related to menstruation?
+    - How to address mood swings during the menstrual cycle?
+
+- intent: seek_professional_help_mental_health
+  examples: |
+    - When should I seek professional help for mental health symptoms related to the menstrual cycle?
+    - Getting help for mental health issues during menstruation?
+    - Consulting a professional for emotional changes during periods?
+    - When to see a doctor for mood swings during the menstrual cycle?
+    - Seeking therapy for mental health symptoms during menstruation?
+
+- intent: exercise_during_period
+  examples: |
+    - Can I exercise during my period?
+    - Exercising while menstruating?
+    - Physical activity during menstruation?
+    - Workout during periods?
+    - Is it okay to exercise when I have my period?
+
+- intent: types_of_exercises_period
+  examples: |
+    - Are there any specific types of exercises that are best during menstruation?
+    - Recommended exercises for menstrual discomfort?
+    - Suitable workouts for period pain?
+    - Exercises for period cramps?
+    - Best physical activities during periods?
+
+- intent: adjust_exercise_based_on_cycle
+  examples: |
+    - Should I adjust my exercise routine based on where I am in my menstrual cycle?
+    - Changing workouts according to menstrual phase?
+    - Exercise plan according to menstrual cycle?
+    - Adapting exercise routine for different phases of the menstrual cycle?
+    - Altering workouts based on menstrual cycle?
+
+- intent: exercise_affect_menstrual_cycle
+  examples: |
+    - Can exercise affect my menstrual cycle?
+    - Influence of physical activity on periods?
+    - Impact of exercise on menstrual cycle?
+    - Does working out change menstruation?
+    - Exercising and menstrual irregularities?
+
+- intent: discomfort_leakage_during_exercise
+  examples: |
+    - What should I do if I experience discomfort or leakage during exercise?
+    - Handling period leakage during workouts?
+    - Dealing with menstrual discomfort during physical activity?
+    - Managing period-related issues during exercise?
+    - Tips for avoiding leaks during workouts?
+
+- intent: alleviate_menstrual_symptoms_foods
+  examples: |
+    - Are there specific foods that can help alleviate menstrual symptoms?
+    - Foods to relieve menstrual symptoms?
+    - How can nutrition help with menstrual discomfort?
+    - Alleviating menstrual symptoms through diet?
+    - Foods for easing cramps and bloating during menstruation?
+
+- intent: dietary_changes_based_on_cycle
+  examples: |
+    - Should I make any dietary changes based on where I am in my menstrual cycle?
+    - Adjusting diet according to menstrual phase?
+    - Dietary recommendations for different menstrual phases?
+    - How to eat based on menstrual cycle?
+    - Nutrition tips for each phase of the menstrual cycle?
+
+- intent: avoid_foods_during_period
+  examples: |
+    - Are there any foods I should avoid during my period?
+    - Foods to steer clear of during menstruation?
+    - Dietary restrictions during periods?
+    - Foods that worsen menstrual symptoms?
+    - Should I cut out certain foods during my period?
+
+- intent: nutrition_affect_menstrual_cycle
+  examples: |
+    - Can nutrition affect my menstrual cycle?
+    - Influence of diet on menstruation?
+    - How does nutrition impact menstrual health?
+    - Role of nutrition in regulating periods?
+    - Does diet affect menstrual regularity?
+
+- intent: food_cravings_during_cycle
+  examples: |
+    - Is it normal to have cravings for certain foods during my menstrual cycle?
+    - Why do I crave certain foods before my period?
+    - Food cravings during menstruation?
+    - Managing food cravings during the menstrual cycle?
+    - Understanding menstrual cravings?
+
+- intent: what_is_pcod
+  examples: |
+    - What is PCOD (Polycystic Ovary Syndrome)?
+    - Explanation of PCOD?
+    - Definition of PCOD?
+    - What does PCOD stand for?
+    - Overview of PCOD?
+
+- intent: pcod_symptoms
+  examples: |
+    - What are the symptoms of PCOD?
+    - Signs of PCOD?
+    - How do I know if I have PCOD?
+    - Identifying PCOD symptoms?
+    - Common PCOD symptoms?
+
+- intent: diagnose_pcod
+  examples: |
+    - How is PCOD diagnosed?
+    - Diagnosing PCOD?
+    - Tests for PCOD?
+    - Steps to diagnose PCOD?
+    - PCOD diagnosis process?
+
+- intent: treatment_options_pcod
+  examples: |
+    - What are the treatment options for PCOD?
+    - How is PCOD treated?
+    - Managing PCOD?
+    - PCOD therapy?
+    - Treating PCOD effectively?
+
+- intent: cure_pcod
+  examples: |
+    - Can PCOD be cured?
+    - Is PCOD curable?
+    - Curing PCOD?
+    - Possibility of PCOD cure?
+    - Permanent solution for PCOD?
+
+- intent: what_is_pms
+  examples: |
+    - What is PMS (Premenstrual Syndrome)?
+    - Explanation of PMS?
+    - What does PMS stand for?
+    - Overview of premenstrual syndrome?
+    - Define premenstrual syndrome?
+
+- intent: commonality_of_pms
+  examples: |
+    - How common is PMS?
+    - Prevalence of PMS?
+    - Incidence of premenstrual syndrome?
+    - How many people experience PMS?
+    - Frequency of PMS symptoms?
+
+- intent: causes_of_pms
+  examples: |
+    - What causes PMS?
+    - Factors contributing to premenstrual syndrome?
+    - Why do people experience PMS?
+    - Understanding the origin of PMS symptoms?
+    - What triggers PMS?
+
+- intent: treatment_of_pms
+  examples: |
+    - How is PMS treated?
+    - Treating premenstrual syndrome?
+    - Management options for PMS?
+    - Remedies for PMS symptoms?
+    - Dealing with PMS effectively?
+
+- intent: seek_help_for_pms
+  examples: |
+    - When should I seek help for PMS symptoms?
+    - Seeking assistance for PMS issues?
+    - Consultation for severe PMS symptoms?
+    - Indications for seeking medical advice regarding PMS?
+    - When to see a doctor for PMS?
+
+- intent: what_is_menopause
+  examples: |
+    - What is menopause?
+    - Definition of menopause?
+    - Overview of menopause?
+    - Explain menopause?
+    - What happens during menopause?
+
+- intent: symptoms_of_menopause
+  examples: |
+    - What are the symptoms of menopause?
+    - Signs of menopause?
+    - Identifying menopause symptoms?
+    - Common menopausal complaints?
+    - How does menopause manifest?
+
+- intent: age_of_menopause
+  examples: |
+    - What age does menopause typically occur?
+    - Average age of menopause?
+    - When do women usually go through menopause?
+    - Age range for menopause?
+    - Timing of menopause?
+
+- intent: diagnose_menopause
+  examples: |
+    - How is menopause diagnosed?
+    - Confirming menopause?
+    - Diagnostic process for menopause?
+    - Testing for menopause?
+    - Steps to determine menopausal status?
+
+- intent: treatment_of_menopause
+  examples: |
+    - What are the treatment options for menopausal symptoms?
+    - Managing menopausal symptoms?
+    - Treating symptoms of menopause?
+    - Relief measures for menopause symptoms?
+    - Coping strategies for menopause?
+
+- intent: causes_of_menstrual_pain
+  examples: |
+    - What causes menstrual pain?
+    - Explanation of menstrual pain causes?
+    - Factors contributing to menstrual pain?
+    - Understanding dysmenorrhea?
+    - What triggers menstrual pain?
+
+- intent: relieve_menstrual_pain
+  examples: |
+    - What are some effective ways to relieve menstrual pain?
+    - How to alleviate menstrual pain?
+    - Remedies for menstrual pain relief?
+    - Managing dysmenorrhea symptoms?
+    - Strategies for reducing menstrual pain?
+
+- intent: natural_remedies_for_menstrual_pain
+  examples: |
+    - Are there any natural remedies for menstrual pain?
+    - Natural ways to relieve menstrual pain?
+    - Herbal remedies for menstrual pain relief?
+    - Alternative treatments for dysmenorrhea?
+    - Using natural methods to ease menstrual pain?
+
+- intent: see_doctor_for_menstrual_pain
+  examples: |
+    - Should I see a healthcare provider for menstrual pain?
+    - When to consult a doctor for menstrual pain?
+    - Seeking medical advice for dysmenorrhea?
+    - Indications for seeing a doctor about menstrual pain?
+    - Do I need professional help for menstrual pain?
+
+- intent: lifestyle_changes_for_menstrual_pain
+  examples: |
+    - Can lifestyle changes help reduce menstrual pain?
+    - Lifestyle modifications for managing menstrual pain?
+    - How to adjust lifestyle to ease menstrual pain?
+    - Incorporating healthy habits for dysmenorrhea relief?
+    - Lifestyle tips for alleviating menstrual pain?
+
+- intent: reproductive_health_vaccines
+  examples: |
+    - What vaccines are recommended for reproductive health?
+    - Overview of vaccines for reproductive health?
+    - Vaccination options for reproductive health?
+    - Preventive vaccines for reproductive system?
+    - Importance of vaccines in reproductive health?
+
+- intent: hpv_vaccine_recommendation
+  examples: |
+    - When should women receive the HPV vaccine?
+    - HPV vaccine schedule for females?
+    - Age for HPV vaccination?
+    - Recommendations for HPV vaccination?
+    - HPV vaccine guidelines for women?
+
+- intent: safety_of_vaccines_during_pregnancy
+  examples: |
+    - Are vaccines safe during pregnancy?
+    - Safety of vaccination during pregnancy?
+    - Risks of vaccines during pregnancy?
+    - Vaccination considerations for pregnant women?
+    - Can pregnant women get vaccinated?
+
+- intent: vaccine_protection_for_reproductive_health
+  examples: |
+    - How do vaccines protect reproductive health?
+    - Mechanism of vaccine protection for reproductive system?
+    - Benefits of vaccines in maintaining reproductive health?
+    - Preventive role of vaccines in reproductive health?
+    - Importance of vaccination for reproductive system?
+
+- intent: side_effects_of_reproductive_health_vaccines
+  examples: |
+    - Are there any side effects of reproductive health vaccines?
+    - Potential adverse effects of reproductive system vaccines?
+    - Risks associated with vaccines for reproductive health?
+    - Common side effects of reproductive health vaccination?
+    - What to expect after getting reproductive health vaccines?
+
+- intent: contraceptive_methods_available
+  examples: |
+    - What are the different types of contraceptives available?
+    - Overview of contraceptive methods?
+    - Types of birth control options?
+    - Contraceptive methods explanation?
+    - What are my contraception choices?
+
+- intent: how_hormonal_contraceptives_work
+  examples: |
+    - How do hormonal contraceptives work?
+    - Explanation of hormonal birth control mechanisms?
+    - Mechanism of action for birth control pills?
+    - Understanding how contraceptive injections work?
+    - How do patches prevent pregnancy?
+
+- intent: benefits_of_LARCs
+  examples: |
+    - What are the benefits of long-acting reversible contraceptives (LARCs)?
+    - Advantages of using IUDs for birth control?
+    - Why choose a hormonal implant as a contraceptive method?
+    - Benefits of intrauterine devices (IUDs)?
+    - Pros of using long-acting contraception?
+
+- intent: contraceptives_and_STI_protection
+  examples: |
+    - Can contraceptives protect against sexually transmitted infections (STIs)?
+    - Do birth control methods prevent STIs?
+    - Which contraceptives offer STI protection?
+    - STI prevention with birth control?
+    - Can IUDs prevent sexually transmitted diseases?
+
+- intent: choosing_right_contraceptive_method
+  examples: |
+    - How do I choose the right contraceptive method for me?
+    - Factors to consider when selecting birth control?
+    - Choosing birth control options?
+    - What contraceptive method suits me best?
+    - Personalized contraception recommendations?
+
+- intent: what_are_STDs
+  examples: |
+    - What are sexually transmitted diseases (STDs)?
+    - Explanation of STDs?
+    - Understanding sexually transmitted infections (STIs)?
+    - Overview of common STDs?
+    - What is the meaning of STDs?
+
+- intent: preventing_STDs
+  examples: |
+    - How can STDs be prevented?
+    - STD prevention methods?
+    - Tips for avoiding sexually transmitted infections?
+    - Preventing STD transmission?
+    - What measures reduce the risk of getting STDs?
+
+- intent: symptoms_of_STDs
+  examples: |
+    - What are the symptoms of STDs?
+    - Signs of sexually transmitted diseases?
+    - Common STD symptoms?
+    - How do I recognize if I have an STD?
+    - What are the signs of STIs?
+
+- intent: diagnosing_STDs
+  examples: |
+    - How are STDs diagnosed?
+    - STD testing process?
+    - Steps for diagnosing sexually transmitted infections?
+    - Getting tested for STDs?
+    - What tests are done to detect STDs?
+
+- intent: what_to_do_if_suspect_STD
+  examples: |
+    - What should I do if I suspect I have an STD?
+    - Steps to take if I think I have an STI?
+    - Suspect STD, what next?
+    - Seeking help for possible STD?
+    - What to do if I believe I contracted an STD?
+
+- intent: what_is_UTI
+  examples: |
+    - What is a urinary tract infection (UTI)?
+    - Explanation of UTIs?
+    - Define urinary tract infection?
+    - What does UTI mean?
+    - Tell me about urinary tract infections.
+
+- intent: symptoms_of_UTI
+  examples: |
+    - What are the symptoms of a UTI?
+    - Signs of urinary tract infection?
+    - UTI symptoms overview?
+    - How to recognize a UTI?
+    - List UTI symptoms.
+
+- intent: diagnosing_UTI
+  examples: |
+    - How are UTIs diagnosed?
+    - UTI diagnosis process?
+    - Methods for diagnosing urinary tract infections?
+    - Steps to diagnose a UTI?
+    - Explain UTI tests.
+
+- intent: risk_factors_for_UTI
+  examples: |
+    - What are the risk factors for UTIs in women?
+    - Factors contributing to urinary tract infections?
+    - UTI risk factors overview?
+    - Why do women get UTIs?
+    - List UTI risk factors for females.
+
+- intent: preventing_UTI
+  examples: |
+    - How can UTIs be prevented?
+    - Preventing urinary tract infections?
+    - UTI prevention tips?
+    - Ways to avoid getting a UTI?
+    - Tips for preventing UTIs.
+
+- intent: importance_of_breast_health
+  examples: |
+    - Why is breast health important for women?
+    - Importance of breast care?
+    - Reasons for prioritizing breast health?
+    - Overview of why women should focus on breast health?
+    - Discuss the significance of breast health.
+
+- intent: what_is_mammogram
+  examples: |
+    - What is a mammogram, and when should women start getting them?
+    - Explanation of mammograms?
+    - Define mammogram and screening age?
+    - Information about mammography and screening recommendations?
+    - Describe mammograms and when to start screening.
+
+- intent: risk_factors_for_breast_cancer
+  examples: |
+    - What are the risk factors for breast cancer?
+    - Factors contributing to breast cancer?
+    - Overview of breast cancer risk factors?
+    - Why do some women develop breast cancer?
+    - List breast cancer risk factors.
+
+- intent: performing_breast_self_exams
+  examples: |
+    - How can women perform breast self-exams?
+    - Steps for breast self-examination?
+    - Techniques for doing breast self-checks?
+    - Describe breast self-exams for women?
+    - Teach me about breast self-examination.
+
+- intent: signs_and_symptoms_of_breast_cancer
+  examples: |
+    - What are some signs and symptoms of breast cancer?
+    - Breast cancer symptoms overview?
+    - How to recognize breast cancer signs?
+    - List warning signs of breast cancer?
+    - Explain breast cancer symptoms.
+
+- intent: importance_of_ovarian_health
+  examples: |
+    - Why is ovarian health important for women?
+    - Importance of maintaining ovarian health?
+    - Reasons for focusing on ovarian health?
+    - Explain the significance of ovarian health?
+    - Discuss the importance of ovarian health.
+
+- intent: risk_factors_for_ovarian_cancer
+  examples: |
+    - What are the risk factors for ovarian cancer?
+    - Factors contributing to ovarian cancer risk?
+    - Overview of ovarian cancer risk factors?
+    - Why do some women develop ovarian cancer?
+    - List ovarian cancer risk factors.
+
+- intent: diagnosing_ovarian_cancer
+  examples: |
+    - How is ovarian cancer diagnosed?
+    - Diagnosis process for ovarian cancer?
+    - Methods for diagnosing ovarian cancer?
+    - Steps to diagnose ovarian cancer?
+    - Explain ovarian cancer tests.
+
+- intent: symptoms_of_ovarian_cancer
+  examples: |
+    - What are the symptoms of ovarian cancer?
+    - Signs of ovarian cancer?
+    - Ovarian cancer symptoms overview?
+    - How to recognize ovarian cancer signs?
+    - List warning signs of ovarian cancer.
+
+- intent: raising_awareness_about_ovarian_cancer
+  examples: |
+    - How can women raise awareness about ovarian cancer?
+    - Ways to promote ovarian cancer awareness?
+    - Tips for spreading awareness about ovarian cancer?
+    - What can individuals do to raise ovarian cancer awareness?
+    - Discuss ovarian cancer awareness initiatives.
+
+- intent: hormonal_imbalances_and_reproductive_health
+  examples: |
+    - What are hormonal imbalances, and how do they affect reproductive health?
+    - Explain the impact of hormonal imbalances on reproductive health?
+    - Overview of hormonal imbalances and their effects on reproduction?
+    - How do hormonal imbalances influence reproductive health?
+    - Discuss hormonal imbalances and reproductive health.
+
+- intent: common_hormonal_disorders_in_women
+  examples: |
+    - What are some common hormonal disorders affecting women?
+    - List hormonal disorders commonly seen in women?
+    - Overview of common hormonal imbalances in females?
+    - Explain hormonal disorders prevalent in women?
+    - Discuss common hormonal issues in females.
+
+- intent: diagnosing_hormonal_imbalances
+  examples: |
+    - How are hormonal imbalances diagnosed?
+    - Diagnosis process for hormonal imbalances?
+    - Methods for diagnosing hormonal imbalances?
+    - Steps to diagnose hormonal imbalances?
+    - Explain hormonal imbalance tests.
+
+- intent: treatment_options_for_hormonal_imbalances
+  examples: |
+    - What are the treatment options for hormonal imbalances?
+    - Overview of treatments for hormonal imbalances?
+    - How are hormonal imbalances treated?
+    - List options for managing hormonal imbalances?
+    - Discuss treatment modalities for hormonal imbalances.
+
+- intent: lifestyle_factors_and_hormonal_balance
+  examples: |
+    - Can lifestyle factors affect hormonal balance?
+    - How do lifestyle choices impact hormonal balance?
+    - Explain the relationship between lifestyle and hormonal balance?
+    - Overview of lifestyle factors influencing hormonal balance?
+    - Discuss lifestyle adjustments for hormonal balance.
+
+- intent: importance_of_reproductive_health
+  examples: |
+    - What does reproductive health encompass?
+    - Explain reproductive health.
+    - What aspects are included in reproductive health?
+    - Define reproductive health.
+    - Discuss the meaning of reproductive health.
+
+- intent: importance_of_reproductive_health_for_women
+  examples: |
+    - Why is reproductive health important for women?
+    - Importance of reproductive health for females?
+    - Discuss the significance of reproductive health for women.
+    - Explain why women's reproductive health matters.
+    - What role does reproductive health play in women's lives?
+
+- intent: key_components_of_reproductive_healthcare_for_women
+  examples: |
+    - What are some key components of reproductive healthcare for women?
+    - List components of women's reproductive healthcare.
+    - Overview of reproductive healthcare services for females.
+    - Discuss essential elements of women's reproductive healthcare.
+    - Explain what services are included in women's reproductive healthcare.
+
+- intent: advocating_for_reproductive_health_rights
+  examples: |
+    - How can women advocate for their reproductive health rights?
+    - Ways to promote reproductive health rights for females?
+    - Discuss advocating for women's reproductive health rights.
+    - What actions can women take to support their reproductive health rights?
+    - Strategies for advocating for reproductive health rights.
+
+- intent: role_of_healthcare_providers_in_promoting_reproductive_health
+  examples: |
+    - What role do healthcare providers play in promoting women's reproductive health?
+    - Discuss the role of healthcare professionals in women's reproductive health.
+    - How do healthcare providers contribute to women's reproductive health?
+    - Explain the responsibilities of healthcare providers in promoting reproductive health.
+    - Overview of healthcare providers' role in women's reproductive healthcare.
+
+- intent: fertility_preservation_options_for_women
+  examples: |
+    - What are fertility preservation options for women?
+    - List options for preserving fertility in females.
+    - Overview of fertility preservation methods for women.
+    - Explain fertility preservation choices available to women.
+    - Discuss ways women can preserve their fertility.
+
+- intent: who_might_consider_fertility_preservation
+  examples: |
+    - Who might consider fertility preservation?
+    - Reasons for considering fertility preservation?
+    - Who should think about preserving fertility?
+    - Overview of individuals who may consider fertility preservation.
+    - Factors influencing the decision to pursue fertility preservation.
+
+- intent: how_does_egg_freezing_work
+  examples: |
+    - How does egg freezing work, and what is the process?
+    - Explain the process of egg freezing.
+    - What is involved in egg freezing?
+    - Describe how egg freezing works.
+    - Overview of the egg freezing procedure.
+
+- intent: success_rates_of_fertility_preservation_methods
+  examples: |
+    - What are the success rates of fertility preservation methods?
+    - How successful are fertility preservation techniques?
+    - Discuss the effectiveness of fertility preservation methods.
+    - Overview of success rates for preserving fertility.
+    - What are the chances of success with fertility preservation?
+
+- intent: ethical_considerations_surrounding_fertility_preservation
+  examples: |
+    - What are the ethical considerations surrounding fertility preservation?
+    - Discuss the ethics of fertility preservation.
+    - Ethical concerns related to fertility preservation?
+    - Explain the ethical implications of fertility preservation.
+    - Considerations regarding ethics and fertility preservation.
+
+- intent: reproductive_health_changes_with_age
+  examples: |
+    - How does reproductive health change with age in women?
+    - Explain the changes in reproductive health with age.
+    - What happens to reproductive health as women age?
+    - Discuss the effects of aging on reproductive health.
+    - How does aging affect women's reproductive health?
+
+- intent: common_reproductive_health_concerns_for_older_women
+  examples: |
+    - What are some common reproductive health concerns for older women?
+    - List reproductive health issues for women as they age.
+    - Discuss concerns related to reproductive health in older females.
+    - What are the typical reproductive health problems in elderly women?
+    - Overview of reproductive health challenges in older women.
+
+- intent: maintaining_reproductive_health_as_women_age
+  examples: |
+    - How can women maintain reproductive health as they age?
+    - Tips for preserving reproductive health as women get older?
+    - Discuss strategies for maintaining reproductive health with age.
+    - What can women do to support their reproductive health as they age?
+    - How to promote reproductive health as women grow older?
+
+- intent: healthcare_support_for_reproductive_health_as_women_age
+  examples: |
+    - What role does healthcare play in supporting reproductive health as women age?
+    - Discuss healthcare support for reproductive health in aging women.
+    - How do healthcare providers help with reproductive health as women get older?
+    - Explain the role of healthcare in promoting reproductive health during aging.
+    - Overview of healthcare services for reproductive health in older women.
+
+- intent: challenges_and_opportunities_in_addressing_reproductive_health_as_women_age
+  examples: |
+    - What are some challenges and opportunities in addressing reproductive health as women age?
+    - Discuss the obstacles and possibilities in managing reproductive health with age.
+    - Overview of challenges and opportunities related to aging and reproductive health.
+    - Challenges and opportunities in supporting reproductive health as women grow older.
+    - Addressing reproductive health concerns in aging women: challenges and opportunities.
+
+- intent: thankyou
+  examples: |
+    - Thanks!
+    - Thank you so much
+    - Appreciate it!
+    - Thanks a lot
+    - Thx!
+    - Thank you
+    - Many thanks
+    - Thanks for your help
+    - I'm grateful
